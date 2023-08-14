@@ -14,7 +14,7 @@ pipeline {
       stage("Build Image") {
             steps {
                 script {
-                    sh "sudo docker build -t webhook-img ."
+                    sh "docker build -t webhook-img ."
                 }
             }
         }
